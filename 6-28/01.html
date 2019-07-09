@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 100px;
+            background-color: aliceblue;
+        }
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+        .header {
+            font-size: 0.16em;
+            text-align: center;
+            height: 3.8em;
+            background-color: cornflowerblue;
+            line-height: 3.8em;
+            color: aliceblue;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            display: block;
+            width: 2em;
+            height: 3em;
+            background: url('imges/icon_arr_back.png') no-repeat;
+            position: absolute;
+            background-size: auto 50%;
+            left: 2.2em;
+            top: 1.2em;
+        }
+
+        .header::after {
+            content: '';
+            display: block;
+            width: 2em;
+            height: 3em;
+            background: url('imges/icon_arr_more.png') no-repeat;
+            position: absolute;
+            background-size: 50% auto;
+            right: 2.2em;
+            top: 1.6em;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <article class="header">
+        <a href="#" class=" back"></a>
+        <p>假单查询</p>
+        <a href="#" class="more"> </a>
+    </article>
+    <article class="trip clearfix">
+        <p class="tit">07-06 提交</p>
+
+        <div class="approve">
+            <dl>
+                <dt>员工</dt>
+                <dd>张公子-AB047239</dd>
+            </dl>
+            <dl>
+                <dt>类型</dt>
+                <dd>病假</dd>
+            </dl>
+            <dl>
+                <dt>开始时间</dt>
+                <dd>2018-07-07&nbsp;&nbsp;上午8:30</dd>
+            </dl>
+            <dl>
+                <dt>结束时间</dt>
+                <dd>2018-07-09&nbsp;&nbsp;下午5:30</dd>
+            </dl>
+            <dl>
+                <dt>时长</dt>
+                <dd>2天</dd>
+            </dl>
+            <dl>
+                <dt>事由及安排</dt>
+                <dd>父母生病回家探望，工作任务交由李四处理一下。</dd>
+            </dl>
+            <dl>
+                <dt>外出地点</dt>
+                <dd>北京</dd>
+            </dl>
+            <dl>
+                <dt>手机</dt>
+                <dd>18888888888</dd>
+            </dl>
+        </div>
+    </article>
+
+</body>
+
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <ul>
+        <li fic>
+            <img src="./1.png" alt="">
+            <div>
+                <p>[海报冲销]朝阳的好机会</p>
+                <p>颜色：米黄</p>
+                <p>x1</p>
+            </div>
+            <span>￥6.8</span>
+        </li>
+        <li>
+            <img src="./2.png" alt="">
+            <div>
+                <p>[海报冲销]朝阳的好机会</p>
+                <p>颜色：米黄</p>
+                <p>x1</p>
+            </div>
+            <span>￥5.98</span>
+        </li>
+        <li>
+            <img src="./3.png" alt="">
+            <div>
+                <p>[海报冲销]朝阳的好机会</p>
+                <p>颜色：米黄</p>
+                <p>x1</p>
+            </div>
+            <span>99.08</span>
+        </li>
+    </ul>
+    <script>
+            setFont()
+            function setFont(){
+                var width = document.documentElement.clientWidth || document.body.clientWidth
+                document.querySelector('html').style.fontsize = width /3.75 + 'px'
+            }
+            document.body.onresize = function(){
+                setFont()
+                console.log(width)
+            }
+        </script>
+</body>
+
+</html>
